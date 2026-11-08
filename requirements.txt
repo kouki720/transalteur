@@ -1,0 +1,8 @@
+langchain
+langchain-nvidia-ai-endpoints
+python-dotenv
+pyyaml
+pandas
+pytest
+pyinstaller
+python-dotenv

@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Environnement virtuel
+venv/
+__pycache__/
+*.pyc
+
+# Build PyInstaller
+build/
+dist/
+*.spec
+
+# Données générées pendant les tests
+data/exemples/resultats/*.csv
+
+# IDE
+.vscode/
+.idea/

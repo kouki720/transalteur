@@ -1,0 +1,15 @@
+terme_source,langue_source,langue_cible,traduction_imposee,type
+React,fr,en,React,impose
+React,en,fr,React,impose
+API,fr,en,API,impose
+API,en,fr,API,impose
+cloud,fr,en,cloud,impose
+cloud,en,fr,cloud,impose
+intelligence artificielle,fr,en,artificial intelligence,impose
+artificial intelligence,en,fr,intelligence artificielle,impose
+React,fr,ja,React,impose
+React,en,ja,React,impose
+API,fr,ja,API,impose
+API,en,ja,API,impose
+cloud,fr,ja,クラウド,impose
+cloud,en,ja,クラウド,impose

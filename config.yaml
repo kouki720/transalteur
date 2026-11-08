@@ -1,0 +1,15 @@
+model:
+  id: "nvidia/nemotron-3.5-super-vl-120b-a12b"
+  temperature: 0.2
+  max_tokens: 1024
+
+langues:
+  supportees: [fr, en, es, de, ar, ja]
+  defaut_cible: en
+  noms:
+    fr: Français
+    en: Anglais
+    es: Espagnol
+    de: Allemand
+    ar: Arabe
+    ja: Japonais
