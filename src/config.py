@@ -8,7 +8,7 @@ RACINE = racine()
 load_dotenv(RACINE / ".env")
 
 NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY")
-if not NVIDIA_API_KEY or not NVIDIA_API_KEY.startswith("nvapi-"):
+if not NVIDIA_API_KEY and not os.getenv("CI"):
     raise RuntimeError("NVIDIA_API_KEY manquante ou invalide dans .env")
 
 with open(RACINE / "config.yaml", encoding="utf-8") as f:
@@ -25,8 +25,3 @@ NOMS_LANGUES = CONFIG["langues"]["noms"]
 CHEMIN_DATA = RACINE / "data"
 CHEMIN_GLOSSAIRE = chemin_data("glossaire.csv")
 CHEMIN_MEMOIRE = chemin_data("memoire_traduction.csv")
-
-
-NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY")
-if not NVIDIA_API_KEY and not os.getenv("CI"):
-    raise RuntimeError("NVIDIA_API_KEY manquante ou invalide dans .env")
