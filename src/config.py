@@ -25,3 +25,8 @@ NOMS_LANGUES = CONFIG["langues"]["noms"]
 CHEMIN_DATA = RACINE / "data"
 CHEMIN_GLOSSAIRE = chemin_data("glossaire.csv")
 CHEMIN_MEMOIRE = chemin_data("memoire_traduction.csv")
+
+
+NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY")
+if not NVIDIA_API_KEY and not os.getenv("CI"):
+    raise RuntimeError("NVIDIA_API_KEY manquante ou invalide dans .env")
